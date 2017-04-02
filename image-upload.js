@@ -48,7 +48,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
         toggleVisibility( 'DELETE' );
     } else {
         img.setAttribute( 'src', customUploads.imageData.src );
-        hidden.setAttribute( 'value', JSON.stringify([ customUploads.imageData ]) );
+        hidden.setAttribute( 'value', JSON.stringify([{ id: customUploads.imageData.id, url: customUploads.imageData.url }]) );
         toggleVisibility( 'ADD' );
     }
 } );
